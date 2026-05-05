@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inpatient Program - Havens Cove</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO*/
+.small-hero {
+  height: 60vh;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+.hero-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-box p {
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* LAYOUT */
+.inpatient-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inpatient-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.inpatient-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.inpatient-text p {
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.inpatient-image {
+  flex: 1;
+}
+
+.inpatient-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* LIST */
+.about-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+/* FEATURES */
+.features-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<header>
+<h1>Havens Cove</h1>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="detox.html">Detox</a>
+  <a href="inpatient.html" class="active">Inpatient</a>
+  <a href="outpatient.html">Outpatient</a>
+  <a href="apply.html" class="apply-btn">Application</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero small-hero">
+  <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b" class="hero-bg">
+  <div class="overlay"></div>
+
+  <div class="hero-box">
+    <h2>Inpatient Residential Program</h2>
+    <p>24/7 structured care in a safe, supportive environment</p>
+    <a href="index.html#contact" class="btn">Start Your Recovery</a>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="inpatient-container">
+
+    <div class="inpatient-text">
+      <h2>What is Inpatient Care?</h2>
+      <p>
+        Inpatient care provides a structured, immersive recovery environment where individuals
+        receive round-the-clock medical and emotional support. This approach removes external
+        triggers and allows full focus on healing and long-term recovery.
+      </p>
+
+      <div class="about-list">
+        <div class="about-item">🏥 24/7 medical supervision</div>
+        <div class="about-item">🧠 Individual & group therapy</div>
+        <div class="about-item">🌿 Holistic treatments & wellness</div>
+        <div class="about-item">🔒 Safe, structured environment</div>
+      </div>
+
+      <a href="index.html#contact" class="btn">Get Help Now</a>
+    </div>
+
+    <div class="inpatient-image">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Inpatient rehabilitation room">
+    </div>
+
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <h2 style="text-align:center;">Program Features</h2>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Therapeutic Support</h3>
+      <p>Individual and group therapy sessions to support long-term recovery.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Holistic Care</h3>
+      <p>Yoga, meditation, and wellness programs to heal mind and body.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>24/7 Supervision</h3>
+      <p>Continuous support from experienced healthcare professionals.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST SECTION -->
+<section class="section">
+  <h2 style="text-align:center;">Why Choose Havens Cove?</h2>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>✔ Private & Confidential</h3>
+      <p>Your recovery is handled with complete discretion and care.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>✔ Expert Team</h3>
+      <p>Highly trained professionals dedicated to your recovery journey.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>✔ Comfortable Setting</h3>
+      <p>A calm and supportive environment designed for healing.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section">
+  <h2 style="text-align:center;">Our Facility</h2>
+
+  <div class="gallery">
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Facility room">
+    </div>
+    <div class="image-box">
+      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" alt="Therapy session">
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Take the First Step Today</h2>
+  <p>Speak confidentially with our team and begin your recovery journey now.</p>
+  <a href="tel:+263786832670" class="btn">📞 Speak to Someone Now</a>
+</section>
+
+<footer>
+  <p>© 2026 Havens Cove Rehabilitation Centre</p>
+</footer>
+
+</body>
+</html>

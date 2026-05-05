@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Apply - Havens Cove</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+/* CARDS */
+.features-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Havens Cove</h1>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="detox.html">Detox</a>
+  <a href="inpatient.html">Inpatient</a>
+  <a href="outpatient.html">Outpatient</a>
+  <a href="apply.html" class="active">Apply</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="Havens Cove (2).png" class="hero-bg">
+  <div class="overlay"></div>
+
+  <div>
+    <h2>Start Your Recovery Journey</h2>
+    <p>Take the first step toward a healthier, stronger future</p>
+  </div>
+</section>
+
+<!-- WHY APPLY -->
+<section class="section">
+  <h2 style="text-align:center;">Why Apply With Us?</h2>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>✔ Fast Response</h3>
+      <p>Our team reviews applications quickly and confidentially.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>✔ Personalised Care</h3>
+      <p>Your treatment plan is tailored to your needs.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>✔ Supportive Team</h3>
+      <p>We guide you every step of your recovery journey.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="application-form.html" class="btn">Apply Now</a>
+  </div>
+</section>
+
+<footer>
+<p>© 2026 Havens Cove Rehabilitation Centre</p>
+</footer>
+
+</body>
+</html>

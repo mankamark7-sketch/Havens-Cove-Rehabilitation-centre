@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About - Havens Cove</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+.section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO */
+.small-hero {
+  height: 60vh;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: -1;
+}
+
+.hero-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-box p {
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+/* SPLIT SECTION */
+.split {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.split-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.split-text p {
+  line-height: 1.7;
+  color: #555;
+}
+
+.split-image {
+  flex: 1;
+}
+
+.split-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* CARDS */
+.features-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* TEAM */
+.team-card h3 {
+  margin-bottom: 5px;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<h1>Havens Cove</h1>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="detox.html">Detox</a>
+  <a href="inpatient.html">Inpatient</a>
+  <a href="outpatient.html">Outpatient</a>
+  <a href="apply.html" class="apply-btn">Application</a>
+  <a href="index.html#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero small-hero">
+  <img src="https://images.unsplash.com/photo-1504814532849-cff240bbc503" class="hero-bg">
+  <div class="overlay"></div>
+
+  <div class="hero-box">
+    <h2>About Havens Cove</h2>
+    <p>Dedicated to helping individuals rebuild their lives through recovery</p>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section class="section">
+  <div class="split">
+
+    <div class="split-text">
+      <h2>Our Story</h2>
+      <p>
+        Founded in <b>2012</b>, Havens Cove Rehabilitation Centre began as a small
+        treatment facility with a clear mission—to help individuals overcome addiction
+        and rebuild their lives. Over the years, we have grown into a trusted centre
+        offering comprehensive recovery programs, professional medical care, and
+        emotional support.
+      </p>
+    </div>
+
+    <div class="split-image">
+      <img src="https://cdn.rehabfiles.com/sites/linwoodhouse/wp-content/uploads/2021/01/Linwood-House-Addiction-Rehab-in-Barnsley-Banner.jpg" alt="Rehabilitation centre">
+    </div>
+
+  </div>
+</section>
+
+<!-- VISION & MISSION -->
+<section class="section">
+  <h2 style="text-align:center;">Our Core Values</h2>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Our Vision</h3>
+      <p>Creating a future where recovery is accessible, compassionate, and sustainable.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Our Mission</h3>
+      <p>Providing safe, evidence-based care addressing all aspects of addiction.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Our Approach</h3>
+      <p>Holistic, personalised treatment tailored to each individual’s journey.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section">
+  <h2 style="text-align:center;">Meet Our Team</h2>
+
+  <div class="features-grid">
+    <div class="feature-card team-card">
+      <h3>Dr. Sarah Moyo</h3>
+      <p>Medical Director</p>
+    </div>
+
+    <div class="feature-card team-card">
+      <h3>Rosemary Jambwa</h3>
+      <p>Lead Therapist</p>
+    </div>
+
+    <div class="feature-card team-card">
+      <h3>Tanaka Gonese</h3>
+      <p>Recovery Coordinator</p>
+    </div>
+  </div>
+</section>
+
+<!-- RECOVERY PROCESS -->
+<section class="section">
+  <h2 style="text-align:center;">The Road to Recovery</h2>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>Step 1</h3>
+      <p>Assessment and personalised treatment planning.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Step 2</h3>
+      <p>Medical detox and withdrawal management.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Step 3</h3>
+      <p>Therapy and rehabilitation programs.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>Step 4</h3>
+      <p>Aftercare support and relapse prevention.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST SECTION -->
+<section class="section">
+  <h2 style="text-align:center;">Why Choose Havens Cove?</h2>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <h3>✔ Confidential Care</h3>
+      <p>Your privacy and dignity are always protected.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>✔ Experienced Team</h3>
+      <p>Dedicated professionals committed to your recovery.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>✔ Proven Approach</h3>
+      <p>Evidence-based methods that deliver real results.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Take the First Step Today</h2>
+  <p>Speak confidentially with our team and begin your recovery journey now.</p>
+  <a href="index.html#contact" class="btn">Get Help Now</a>
+</section>
+
+<footer>
+  <p>© 2026 Havens Cove Rehabilitation Centre</p>
+</footer>
+
+</body>
+</html>

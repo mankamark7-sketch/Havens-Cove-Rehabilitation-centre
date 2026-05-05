@@ -1,0 +1,92 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs | Havens Cove Rehabilitation Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Hope Recovery</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html" class="active">Programs</a>
+    <a href="index.html#gallery">Gallery</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h2>Our Programs</h2>
+  <p>We offer a variety of programs to support individuals at every stage of recovery.</p>
+</section>
+
+<section class="section">
+  <div class="program-container">
+
+    <div class="program-card scroll-animation">
+      <h3>Detox Program</h3>
+      <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773" alt="Detox Program">
+      <p>
+        Our medically supervised detox program helps individuals safely manage withdrawal symptoms.
+        We provide full medical care and emotional support during this critical first step.
+      </p>
+      <a href="index.html#contact">Contact Us</a>
+    </div>
+
+    <div class="program-card scroll-animation">
+      <h3>Inpatient Care</h3>
+      <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef" alt="Inpatient Care">
+      <p>
+        Structured residential programs with 24/7 professional support. Therapy, group counseling, 
+        and wellness activities help individuals focus entirely on their recovery.
+      </p>
+      <a href="index.html#contact">Contact Us</a>
+    </div>
+
+    <div class="program-card scroll-animation">
+      <h3>Outpatient Program</h3>
+      <img src="https://images.Detox.png" alt="Outpatient Program">
+      <p>
+        Flexible treatment programs designed for individuals who need support while maintaining
+        daily life. Includes counseling sessions, therapy, and ongoing check-ins.
+      </p>
+      <a href="index.html#contact">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Ready to Begin Recovery?</h2>
+  <p>Contact our team today to learn which program is best for you.</p>
+  <a href="index.html#contact" class="btn">Contact Us</a>
+</section>
+
+<footer>
+  <p>© 2026 Hope Recovery Rehabilitation Centre</p>
+</footer>
+
+<!-- Scroll animation JS -->
+<script>
+const scrollElements = document.querySelectorAll(".scroll-animation");
+const elementInView = (el, offset = 0) => {
+  const elementTop = el.getBoundingClientRect().top;
+  return elementTop <= (window.innerHeight || document.documentElement.clientHeight) - offset;
+};
+const displayScrollElement = (element) => element.classList.add("show");
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 100)) {
+      displayScrollElement(el);
+    }
+  });
+};
+window.addEventListener("scroll", handleScrollAnimation);
+</script>
+
+</body>
+</html>
